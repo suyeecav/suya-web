@@ -1,115 +1,282 @@
 ---
 ---
 
-@string{aps = {American Physical Society,}}
+@string{usenixsec = {USENIX Security Symposium}}
+@string{oakland   = {IEEE Symposium on Security and Privacy}}
+@string{ccs       = {ACM Conference on Computer and Communications Security}}
+@string{cvpr      = {IEEE/CVF Conference on Computer Vision and Pattern Recognition}}
+@string{neurips   = {Advances in Neural Information Processing Systems}}
+@string{icml      = {International Conference on Machine Learning}}
 
-@book{einstein1920relativity,
-  title     = {Relativity: the Special and General Theory},
-  author    = {Einstein, Albert},
-  year      = {1920},
-  publisher = {Methuen & Co Ltd},
-  html      = {relativity.html}
-}
+% ---------------------------------------------------------------------------
+% Preprints (preprint={true} keeps these in their own section)
+% ---------------------------------------------------------------------------
 
-@book{einstein1956investigations,
+@misc{zhang2026roguemerge,
+  abbr        = {arXiv},
+  preprint    = {true},
   bibtex_show = {true},
-  title       = {Investigations on the Theory of the Brownian Movement},
-  author      = {Einstein, Albert},
-  year        = {1956},
-  publisher   = {Courier Corporation},
-  preview     = {brownian-motion.gif}
+  title       = {RogueMerge: Robust and Unified Attacks against LLM Model Merging},
+  author      = {Zhang, Jinghuai and He, Yetian and Cai, Kunlin and Zhao, Han and Suya, Fnu and Tian, Yuan},
+  year        = {2026},
+  eprint      = {2606.03344},
+  arxiv       = {2606.03344},
+  abstract    = {Model merging combines independently fine-tuned models into a single multi-task model without retraining. We study attacks that survive this merging process.}
 }
 
-@article{einstein1950meaning,
-  abbr        = {AJP},
+@misc{zhang2026imageauditor,
+  abbr        = {arXiv},
+  preprint    = {true},
   bibtex_show = {true},
-  title       = {The meaning of relativity},
-  author      = {Einstein, Albert and Taub, AH},
-  journal     = {American Journal of Physics},
-  volume      = {18},
-  number      = {6},
-  pages       = {403--404},
-  year        = {1950},
-  publisher   = {American Association of Physics Teachers}
+  title       = {ImageAuditor: Membership Inference Attack against Image-based Retrieval-Augmented Generation},
+  author      = {Zhang, Jinghuai and Yu, Pengyue and Lin, Zhexiao and Cai, Kunlin and Suya, Fnu and Tian, Yuan},
+  year        = {2026},
+  eprint      = {2606.03354},
+  arxiv       = {2606.03354},
+  abstract    = {We show that the retrieval corpus behind an image-based RAG system leaks membership, letting an adversary determine whether a given image was indexed.}
 }
 
-@article{PhysRev.47.777,
-  abbr              = {PhysRev},
-  title             = {Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author            = {Einstein*†, A. and Podolsky*, B. and Rosen*, N.},
-  abstract          = {In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal           = {Phys. Rev.},
-  location          = {New Jersey},
-  volume            = {47},
-  issue             = {10},
-  pages             = {777--780},
-  numpages          = {0},
-  year              = {1935},
-  month             = {May},
-  publisher         = aps,
-  doi               = {10.1103/PhysRev.47.777},
-  url               = {https://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html              = {https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf               = {example_pdf.pdf},
-  altmetric         = {248277},
-  dimensions        = {true},
-  google_scholar_id = {qyhmnyLat1gC},
-  video             = {https://www.youtube-nocookie.com/embed/aqz-KE-bpKQ},
-  additional_info   = {. *More Information* can be [found here](https://github.com/alshedivat/al-folio/)},
-  annotation        = {* Example use of superscripts<br>† Albert Einstein},
-  selected          = {true},
-  inspirehep_id     = {3255}
-}
-
-@article{einstein1905molekularkinetischen,
-  title     = {{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author    = {Einstein, A.},
-  journal   = {Annalen der physik},
-  volume    = {322},
-  number    = {8},
-  pages     = {549--560},
-  year      = {1905},
-  publisher = {Wiley Online Library}
-}
-
-@article{einstein1905movement,
-  abbr    = {Ann. Phys.},
-  title   = {Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author  = {Einstein, A.},
-  journal = {Ann. Phys.},
-  volume  = {17},
-  pages   = {549--560},
-  year    = {1905}
-}
-
-@article{einstein1905electrodynamics,
-  title  = {On the electrodynamics of moving bodies},
-  author = {Einstein, A.},
-  year   = {1905}
-}
-
-@article{einstein1905photoelectriceffect,
+@misc{hoque2026token,
+  abbr        = {arXiv},
+  preprint    = {true},
+  selected    = {true},
   bibtex_show = {true},
-  abbr        = {Ann. Phys.},
-  title       = {{{\"U}ber einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt}},
-  author      = {Albert Einstein},
-  abstract    = {This is the abstract text.},
-  journal     = {Ann. Phys.},
-  volume      = {322},
-  number      = {6},
-  pages       = {132--148},
-  year        = {1905},
-  doi         = {10.1002/andp.19053220607},
-  award       = {Albert Einstein receveid the **Nobel Prize in Physics** 1921 *for his services to Theoretical Physics, and especially for his discovery of the law of the photoelectric effect*},
-  award_name  = {Nobel Prize}
+  title       = {Token Inflation: How Dishonest Providers Can Overcharge for Large Language Model Usage},
+  author      = {Hoque, Shahinul and Zhang, Jinghuai and Sun, Jinyuan and Suya, Fnu},
+  year        = {2026},
+  eprint      = {2605.30040},
+  arxiv       = {2605.30040},
+  abstract    = {LLM APIs bill by the token, but the customer cannot verify the count. We study how a dishonest provider can inflate billed usage and what auditing is possible.}
 }
 
-@book{przibram1967letters,
+@misc{cai2026whatif,
+  abbr        = {arXiv},
+  preprint    = {true},
   bibtex_show = {true},
-  title       = {Letters on wave mechanics},
-  author      = {Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
-  year        = {1967},
-  publisher   = {Vision},
-  preview     = {wave-mechanics.gif},
-  abbr        = {Vision}
+  title       = {What-If World: A Causal Benchmark for General World Models in Embodied Scenarios},
+  author      = {Cai, Kunlin and Song, Rui and Zhang, Jinghuai and Zhang, Kaiyuan and Bodapati, Pranav and Yu, Alicia and Suya, Fnu and Rostami, Mohammad and Ma, Jiaqi and Tian, Yuan},
+  year        = {2026},
+  eprint      = {2605.27589},
+  arxiv       = {2605.27589},
+  abstract    = {A benchmark for evaluating whether world models capture causal structure rather than surface correlation in embodied settings.}
+}
+
+@misc{nafi2026lash,
+  abbr        = {arXiv},
+  preprint    = {true},
+  bibtex_show = {true},
+  title       = {LASH: Adaptive Semantic Hybridization for Black-Box Jailbreaking of Large Language Models},
+  author      = {Nafi, Abdullah Al Nomaan and Suya, Fnu and Bhunia, Swarup and Chakraborty, Prabuddha},
+  year        = {2026},
+  eprint      = {2605.21362},
+  arxiv       = {2605.21362},
+  abstract    = {A black-box jailbreaking method that adaptively hybridizes semantic rewrites of a prompt to evade safety alignment.}
+}
+
+% ---------------------------------------------------------------------------
+% Peer-reviewed
+% ---------------------------------------------------------------------------
+
+@inproceedings{rahaman2026aispy,
+  peerreviewed = {true},
+  abbr        = {CCS},
+  selected    = {true},
+  bibtex_show = {true},
+  title       = {(A)iSpy: Parasitic Trojans for Machine Learning Infrastructure},
+  author      = {Rahaman*, Habibur and Xu*, Qipan and Haider, Zafaryab and Chakraborty, Prabuddha and Bhunia, Swarup and Suya, Fnu},
+  booktitle   = ccs,
+  year        = {2026},
+  arxiv       = {2607.17550},
+  abstract    = {Modern ML pipelines depend on third-party libraries for graph compilation and hardware acceleration, but the execution environment itself remains implicitly trusted. (A)iSpy is a parasitic runtime Trojan that observes transient tensor state to exfiltrate training hyperparameters and to amplify weak data poisoning into backdoors with near-100% success, while evading standard malware scanners and model inspection.}
+}
+
+@inproceedings{zhang2026advhub,
+  peerreviewed = {true},
+  abbr        = {IEEE S&P},
+  selected    = {true},
+  bibtex_show = {true},
+  title       = {Adversarial Hubness in Multi-Modal Retrieval},
+  author      = {Zhang, Tingwei and Suya, Fnu and Jha, Rishi and Zhang, Collin and Shmatikov, Vitaly},
+  booktitle   = oakland,
+  year        = {2026},
+  pages       = {329--344},
+  arxiv       = {2412.14113},
+  code        = {https://github.com/Tingwei-Zhang/adv_hub},
+  abstract    = {Hubness makes a few points in a high-dimensional space unusually close to many others. We show an adversary can turn any image or audio input into an adversarial hub retrieved for thousands of unrelated queries, and that standard hubness mitigations do not defend against concept-targeted hubs.}
+}
+
+@inproceedings{amgain2026hamlock,
+  peerreviewed = {true},
+  abbr        = {USENIX Sec},
+  selected    = {true},
+  bibtex_show = {true},
+  title       = {HAMLOCK: HArdware-Model LOgically Combined attacK},
+  author      = {Amgain*, Sanskar and Lobo*, Daniel and Chatterjee*, Atri and Bhunia, Swarup and Suya, Fnu},
+  booktitle   = usenixsec,
+  year        = {2026},
+  arxiv       = {2510.19145},
+  html        = {https://www.usenix.org/conference/usenixsecurity26/presentation/amgain},
+  abstract    = {HAMLOCK distributes backdoor logic across the hardware-software boundary: the model is only minimally altered, and a hardware Trojan watches a few neurons' activations and manipulates output logits directly. Because the model contains no complete backdoor activation path, it appears fully benign and circumvents state-of-the-art model-level defenses, at hardware overheads as low as 0.01%.}
+}
+
+@inproceedings{nafi2026dash,
+  peerreviewed = {true},
+  abbr        = {CVPR},
+  bibtex_show = {true},
+  title       = {DASH: A Meta-Attack Framework for Synthesizing Effective and Stealthy Adversarial Examples},
+  author      = {Nafi, Abdullah Al Nomaan and Rahaman, Habibur and Haider, Zafaryab and Mahfuz, Tanzim and Suya†, Fnu and Bhunia, Swarup and Chakraborty, Prabuddha},
+  booktitle   = cvpr,
+  year        = {2026},
+  arxiv       = {2508.13309},
+  code        = {https://github.com/siege-research/DASH},
+  abstract    = {DASH is a differentiable meta-attack that composes existing Lp-bounded attacks with learned adaptive weights, jointly minimizing misclassification loss and perceptual distortion to produce adversarial examples that are both more effective and more perceptually aligned than state-of-the-art perceptual attacks.}
+}
+
+@inproceedings{suya2024sok,
+  peerreviewed = {true},
+  abbr        = {SaTML},
+  selected    = {true},
+  bibtex_show = {true},
+  title       = {SoK: Pitfalls in Evaluating Black-Box Attacks},
+  author      = {Suya*, Fnu and Suri*, Anshuman and Zhang, Tingwei and Hong, Jingtao and Tian, Yuan and Evans, David},
+  booktitle   = {IEEE Conference on Secure and Trustworthy Machine Learning},
+  year        = {2024},
+  arxiv       = {2310.17534},
+  abstract    = {We organize the black-box attack literature along the axes of what the adversary actually knows and can query, and show that many reported comparisons are confounded by mismatched threat models.}
+}
+
+@inproceedings{suya2023distributions,
+  peerreviewed = {true},
+  abbr        = {NeurIPS},
+  selected    = {true},
+  bibtex_show = {true},
+  title       = {What Distributions are Robust to Indiscriminate Poisoning Attacks for Linear Learners?},
+  author      = {Suya, Fnu and Zhang, Xiao and Tian, Yuan and Evans, David},
+  booktitle   = neurips,
+  year        = {2023},
+  arxiv       = {2307.01073},
+  abstract    = {We characterize optimal indiscriminate poisoning for linear learners and prove that well-separated, low-variance class-conditional distributions with small constraint sets are inherently resistant, explaining the wide variation in attack success across benchmark datasets.}
+}
+
+@inproceedings{tian2023manipulating,
+  peerreviewed = {true},
+  abbr        = {CVPR},
+  bibtex_show = {true},
+  title       = {Manipulating Transfer Learning for Property Inference},
+  author      = {Tian, Yulong and Suya, Fnu and Suri, Anshuman and Xu, Fengyuan and Evans, David},
+  booktitle   = cvpr,
+  year        = {2023},
+  arxiv       = {2303.11643},
+  abstract    = {An upstream model provider can plant structure in a pretrained model that lets them infer properties of a downstream fine-tuning dataset they never see.}
+}
+
+@inproceedings{suya2023advml,
+  peerreviewed = {true},
+  abbr        = {AdvML},
+  bibtex_show = {true},
+  title       = {When Can Linear Learners be Robust to Indiscriminate Poisoning Attacks?},
+  author      = {Suya, Fnu and Zhang, Xiao and Tian, Yuan and Evans, David},
+  booktitle   = {ICML AdvML Frontiers Workshop},
+  year        = {2023}
+}
+
+@inproceedings{rose2022poisoning,
+  peerreviewed = {true},
+  abbr        = {VISxAI},
+  award       = {Best Paper Award},
+  bibtex_show = {true},
+  title       = {Poisoning Attacks and Subpopulation Susceptibility},
+  author      = {Rose, Evan and Suya, Fnu and Evans, David},
+  booktitle   = {VISxAI Workshop},
+  year        = {2022},
+  abstract    = {An interactive explainer showing why some subpopulations are far easier to poison than others.}
+}
+
+@article{tian2022stealthy,
+  peerreviewed = {true},
+  abbr        = {TIFS},
+  selected    = {true},
+  bibtex_show = {true},
+  title       = {Stealthy Backdoors as Compression Artifacts},
+  author      = {Tian, Yulong and Suya, Fnu and Xu, Fengyuan and Evans, David},
+  journal     = {IEEE Transactions on Information Forensics and Security},
+  year        = {2022},
+  arxiv       = {2104.15129},
+  abstract    = {A backdoor can be hidden so that it only materializes once the model is compressed, so the shipped full-precision model looks clean.}
+}
+
+@inproceedings{suya2021model,
+  peerreviewed = {true},
+  abbr        = {ICML},
+  bibtex_show = {true},
+  title       = {Model-Targeted Poisoning Attacks with Provable Convergence},
+  author      = {Suya, Fnu and Mahloujifar, Saeed and Suri, Anshuman and Evans, David and Tian, Yuan},
+  booktitle   = icml,
+  year        = {2021},
+  html        = {http://proceedings.mlr.press/v139/suya21a.html},
+  abstract    = {A poisoning attack that provably converges to an attacker-chosen target model, with bounds on the number of poison points required.}
+}
+
+@inproceedings{suya2020hybrid,
+  peerreviewed = {true},
+  abbr        = {USENIX Sec},
+  bibtex_show = {true},
+  title       = {Hybrid Batch Attacks: Finding Black-box Adversarial Examples with Limited Queries},
+  author      = {Suya, Fnu and Chi, Jianfeng and Evans, David and Tian, Yuan},
+  booktitle   = usenixsec,
+  year        = {2020},
+  arxiv       = {1908.07000},
+  html        = {https://www.usenix.org/conference/usenixsecurity20/presentation/suya},
+  abstract    = {Attackers usually care about compromising some input from a batch, not every input. Prioritizing seeds by expected cost cuts the queries needed by an order of magnitude.}
+}
+
+@inproceedings{wang2020scalable,
+  peerreviewed = {true},
+  abbr        = {ECML-PKDD},
+  bibtex_show = {true},
+  title       = {Scalable Attack on Graph Data by Injecting Vicious Nodes},
+  author      = {Wang, Jihong and Luo, Minnan and Suya, Fnu and Li, Jundong and Yang, Zijiang and Zheng, Qinghua},
+  booktitle   = {European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases},
+  year        = {2020}
+}
+
+@inproceedings{chen2019demystifying,
+  peerreviewed = {true},
+  abbr        = {IEEE S&P},
+  bibtex_show = {true},
+  title       = {Demystifying Hidden Privacy Settings in Mobile Apps},
+  author      = {Chen, Yi and Zha, Mingming and Zhang, Nia and Xu, Dandan and Zhao, Qianqian and Feng, Xuan and Yuan, Kan and Suya, Fnu and Tian, Yuan and Chen, Kai and Wang, XiaoFeng and Zou, Wei},
+  booktitle   = oakland,
+  year        = {2019}
+}
+
+@inproceedings{suya2018batch,
+  peerreviewed = {true},
+  abbr        = {IEEE S&P},
+  bibtex_show = {true},
+  title       = {Poster: Adversaries Don't Care About Averages: Batch Attacks on Black-Box Classifiers},
+  author      = {Suya, Fnu and Tian, Yuan and Evans, David and Papotti, Paolo},
+  booktitle   = {IEEE Symposium on Security and Privacy (Poster)},
+  year        = {2018}
+}
+
+@inproceedings{suya2017query,
+  peerreviewed = {true},
+  abbr        = {MLSec},
+  bibtex_show = {true},
+  title       = {Query-Limited Black-Box Attacks to Classifiers},
+  author      = {Suya, Fnu and Tian, Yuan and Evans, David and Papotti, Paolo},
+  booktitle   = {NeurIPS Workshop on Machine Learning and Computer Security},
+  year        = {2017},
+  arxiv       = {1712.08713}
+}
+
+@inproceedings{suya2016optimal,
+  peerreviewed = {true},
+  abbr        = {GlobalSIP},
+  bibtex_show = {true},
+  title       = {Optimal Stochastic Power Control with Compressive CSI Acquisition for Cloud-RAN},
+  author      = {Suya, Fnu and Sun, Yin and Koksal, Can Emre and Shroff, Ness B.},
+  booktitle   = {IEEE Global Conference on Signal and Information Processing},
+  year        = {2016}
 }

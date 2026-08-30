@@ -2,14 +2,24 @@
 layout: page
 permalink: /teaching/
 title: teaching
-description: Course materials, schedules, and resources for classes taught.
+description: Courses at UTK, and earlier teaching assistantships.
 nav: true
-nav_order: 6
-calendar: true
+nav_order: 4
 ---
 
-This page displays a collection of courses with detailed schedules, materials, and resources. You can organize your courses by years, terms, or topics.
+### University of Tennessee, Knoxville
 
-{% include calendar.liquid calendar_id='test@gmail.com' timezone='Asia/Shanghai' %}
+**COSC 522 — Machine Learning**
+<br><small>Fall 2025, Fall 2026</small>
 
-{% include courses.liquid %}
+**COSC 366 — Introduction to Cybersecurity**
+<br><small>Fall 2024, Spring 2026</small>
+
+**COSC 489/594 — Adversarial Machine Learning**
+<br><small>Spring 2025</small>
+
+### Earlier, as a Teaching Assistant
+
+**University of Virginia** — CS 6501-005 Learning Theory; CS 6501-009 Cryptography
+
+**Arizona State University** — CSE 556 Game Theory; CSE 240 Introduction to Programming Languages; CSE 100 Introduction to C++ Programming

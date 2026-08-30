@@ -1,0 +1,110 @@
+---
+layout: default
+---
+
+<!-- Local override of al_folio_core's about layout.
+     Changes: surname emphasised in the title; social icons moved under the
+     profile photo and shrunk; front-page publications get a
+     selected / by-date switch. -->
+
+<div class="post">
+  <header class="post-header">
+    <h1 class="post-title">
+      {% if site.title == 'blank' %}
+        {{ site.first_name }} <span class="font-weight-bold">{{ site.last_name }}</span>
+      {% else %}
+        {{ site.title }}
+      {% endif %}
+    </h1>
+    <p class="desc">{{ page.subtitle }}</p>
+  </header>
+
+  <article>
+    {% if page.profile %}
+      <div class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}">
+        {% if page.profile.image %}
+          {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
+          {% if page.profile.image_circular %}
+            {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
+          {% else %}
+            {% assign profile_image_class = 'img-fluid z-depth-1 rounded' %}
+          {% endif %}
+          {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px) 30vw, 95vw"{% endcapture %}
+          {%
+            include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image
+            cache_bust=true
+          %}
+        {% endif %}
+
+        {% if page.social %}
+          <div class="profile-icons contact-icons">{% social_links %}</div>
+        {% endif %}
+
+        {% if page.profile.more_info %}
+          <div class="more-info">{{ page.profile.more_info }}</div>
+        {% endif %}
+      </div>
+    {% endif %}
+
+    <div class="clearfix">{{ content }}</div>
+
+    <!-- News -->
+    {% if page.announcements and page.announcements.enabled %}
+      <h2>
+        <a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a>
+      </h2>
+      {% include news.liquid limit=true %}
+    {% endif %}
+
+    <!-- Publications, with a selected / by-date switch -->
+    {% if page.selected_papers %}
+      <h2 class="pub-heading">
+        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">publications</a>
+        <span class="pub-switch">[
+          <button type="button" id="pub-sel-btn" class="is-on">show selected</button> /
+          <button type="button" id="pub-date-btn">show by date</button>
+        ]</span>
+      </h2>
+
+      <p class="author-note pub-legend">
+        <sup>*</sup> equal contribution &nbsp;&middot;&nbsp;
+        <sup>&dagger;</sup> co-corresponding author &nbsp;&middot;&nbsp;
+        <u>underlined</u> names are students I supervise
+      </p>
+
+      <div id="pub-selected" class="publications">
+        {% bibliography --group_by none --query @*[selected=true]* %}
+      </div>
+
+      <div id="pub-bydate" class="publications" hidden>
+        {% bibliography %}
+      </div>
+
+      <script>
+        (function () {
+          var selBtn = document.getElementById('pub-sel-btn');
+          var dateBtn = document.getElementById('pub-date-btn');
+          var selPane = document.getElementById('pub-selected');
+          var datePane = document.getElementById('pub-bydate');
+          if (!selBtn || !dateBtn || !selPane || !datePane) return;
+          function show(selected) {
+            selPane.hidden = !selected;
+            datePane.hidden = selected;
+            selBtn.classList.toggle('is-on', selected);
+            dateBtn.classList.toggle('is-on', !selected);
+          }
+          selBtn.addEventListener('click', function () { show(true); });
+          dateBtn.addEventListener('click', function () { show(false); });
+        })();
+      </script>
+    {% endif %}
+
+    {% if site.newsletter and site.newsletter.enabled and site.footer_fixed %}
+      {% if site.plugins contains 'al_newsletter' %}
+        {% include plugins/al_newsletter_form_center_margin.liquid %}
+      {% else %}
+        {% include newsletter.liquid center=true %}
+      {% endif %}
+    {% endif %}
+  </article>
+</div>
