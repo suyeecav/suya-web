@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our **National Institutes of Health (NIH)** research proposal is funded. I serve as Co-PI.
+Our **NIH** proposal is funded.
