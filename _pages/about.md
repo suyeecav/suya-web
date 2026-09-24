@@ -18,7 +18,7 @@ social: true
 announcements:
   enabled: true
   scrollable: true
-  limit: 5
+  limit: 12
 
 latest_posts:
   enabled: false
@@ -44,6 +44,9 @@ latest_posts:
   .pub-switch button:hover { color: var(--global-theme-color); }
   .pub-switch button.is-on { color: var(--global-theme-color); border-bottom-color: var(--global-theme-color); }
 
+  /* rolling news: fixed-height scroll box so the list can grow without stretching the page */
+  .news .table-responsive { max-height: 19rem !important; overflow-y: auto; }
+  .news .table-responsive th { white-space: nowrap; }
   .author-note { font-size: 0.8rem; color: var(--global-text-color-light); margin-top: 1.2rem; }
 </style>
 

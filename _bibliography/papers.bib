@@ -37,6 +37,18 @@
   abstract    = {We show that the retrieval corpus behind an image-based RAG system leaks membership, letting an adversary determine whether a given image was indexed.}
 }
 
+@article{du2026greedy,
+  abbr         = {TMLR},
+  peerreviewed = {true},
+  bibtex_show  = {true},
+  title        = {Greedy Decoding Is Not Precision-Invariant: Cross-Precision Output Divergence in LLM Inference},
+  author       = {Du, Gaoyuan and Khan, Anam Nawaz and Zhou, Rex and Liu, Xiaoyang and Chakrabarti, Deepayan and Suya, Fnu and Li, Xueping},
+  journal      = {Transactions on Machine Learning Research},
+  year         = {2026},
+  html         = {https://openreview.net/forum?id=QDOKyg7a5e},
+  abstract     = {Greedy decoding from large language models is commonly treated as deterministic. We show it is not precision-invariant: the same model, prompt and decoding algorithm produce different outputs in BF16 versus FP16 on identical hardware, with 49-100% of prompts diverging across six models and three benchmarks. We trace the effect to the top-two logit margin at the lm_head, and evaluate a selective FP32 recomputation that recovers 22-36pp of exact agreement at under 4% latency overhead in low-batch inference.}
+}
+
 @inproceedings{hoque2026token,
   abbr         = {NeurIPS},
   peerreviewed = {true},

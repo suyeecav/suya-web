@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2026-09-24 10:00:00-0400
+date: 2026-07-27 09:00:00-0400
 inline: true
 related_posts: false
 ---
 
-Our **NIH** proposal is funded.
+My **Energy & Environment Gateway** proposal is funded ([news](https://eecs.utk.edu/seed-boost/)). Thanks, ORIED!
