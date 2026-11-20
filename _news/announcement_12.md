@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-**Are Content Moderation Systems Stable under Stylistic Variation?** — on how commercial moderators react when harmful prompts are rewritten in a different style — is accepted to **Findings of EACL 2027**. Congratulations to Gomathi on her first paper!
+Gomathi's paper on how commercial content moderation systems react to stylistic rewriting of harmful prompts is accepted to **Findings of EACL 2027**.
