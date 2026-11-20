@@ -11,6 +11,10 @@ nav_order: 5
 
 - **Associate Editor**, *Journal of Hardware and Systems Security*
 
+### Area Chair
+
+- International Conference on Machine Learning (ICML), 2027
+
 ### Program Committee
 
 - USENIX Security Symposium
@@ -25,7 +29,7 @@ nav_order: 5
 
 **Journals** — Transactions on Machine Learning Research; Artificial Intelligence
 
-**Conferences** — NeurIPS, ICML, ICLR, AISTATS, CVPR, ICCV
+**Conferences** — NeurIPS, ICLR, AISTATS, CVPR, ICCV
 
 ### Recognition
 
